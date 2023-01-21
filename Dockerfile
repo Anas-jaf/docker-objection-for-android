@@ -8,7 +8,7 @@ ENV PATH $PATH:/opt/platform-tools
 RUN apt update && apt upgrade -yf && \
     apt install -y  software-properties-common && \
     apt install -y python3.7 python3-pip unzip aapt zipalign && \
-    add-apt-repository ppa:webupd8team/java -y && \
+    add-apt-repository ppa:ts.sch.gr/ppa -y && \
     apt update && \
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
     apt install -y oracle-java8-installer && \
